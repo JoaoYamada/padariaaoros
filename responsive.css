@@ -1,0 +1,151 @@
+/* ============================================================
+   RESPONSIVE.CSS — Todas as media queries centralizadas
+   ============================================================ */
+
+/* ── Tablet: ≤ 1024px ── */
+@media (max-width: 1024px) {
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .rankings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .historia-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .historia-content {
+    position: static;
+  }
+}
+
+/* ── Mobile: ≤ 768px ── */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .site-nav {
+    padding-inline: 1.25rem;
+  }
+
+  .site-nav__links,
+  .site-nav__actions {
+    display: none;
+  }
+
+  .site-nav__hamburger {
+    display: flex;
+  }
+
+  /* Stats bar */
+  .stats-bar__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Sistemas grid */
+  .sistemas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Calendar — mantém 7 colunas mas reduz tamanho das células */
+  .calendar__day {
+    padding: 7px 5px;
+    min-height: 52px;
+  }
+
+  .calendar__event {
+    display: none; /* Esconde eventos em telas muito pequenas */
+  }
+
+  /* Sections */
+  section {
+    padding-block: 4rem;
+  }
+
+  .section--cta {
+    padding-block: 5rem;
+  }
+
+  /* História */
+  .chapter-btn__num {
+    font-size: 1.8rem;
+    width: 2.4rem;
+  }
+
+  /* Rankings */
+  .rankings-grid {
+    gap: 1.5rem;
+  }
+
+  /* Section header row vira coluna */
+  .section__header--row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── Mobile pequeno: ≤ 480px ── */
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  .stats-bar__value {
+    font-size: 1.6rem;
+  }
+
+  .historia-layout {
+    gap: 1.5rem;
+  }
+
+  .story-card {
+    padding: 1.5rem;
+  }
+
+  .drops-table thead {
+    display: none; /* Esconde cabeçalho em telas muito pequenas */
+  }
+
+  .drops-table td {
+    display: block;
+    padding: 6px 16px;
+  }
+
+  .drops-table td:first-child {
+    padding-top: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .drops-table td:last-child {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--color-border-dim);
+  }
+
+  .drops-table tbody tr:last-child td:last-child {
+    border-bottom: none;
+  }
+}

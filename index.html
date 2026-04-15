@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aorus Tale — Servidor Priston Tale</title>
+  <meta name="description" content="Servidor dedicado de Priston Tale. Eventos especiais, comunidade ativa e uma experiência épica única." />
+  <meta name="theme-color" content="#070609" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/utilities.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header role="banner">
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="/" class="site-nav__logo" aria-label="Aorus Tale — página inicial">
+        <span class="site-nav__logo-icon" aria-hidden="true">⚔</span>
+        AORUS TALE
+      </a>
+
+      <ul class="site-nav__links" role="list">
+        <li><a href="#sistemas" class="site-nav__link">Info &amp; Sistemas</a></li>
+        <li><a href="#rankings" class="site-nav__link">Rankings</a></li>
+        <li><a href="#drops"    class="site-nav__link">Drops</a></li>
+        <li><a href="#eventos"  class="site-nav__link">Eventos</a></li>
+        <li><a href="#historia" class="site-nav__link">História</a></li>
+      </ul>
+
+      <div class="site-nav__actions">
+        <a href="https://user.aorustale.com/painel/login"
+           class="nav-btn"
+           aria-label="Acessar painel do jogador"
+           target="_blank" rel="noopener noreferrer">
+          Painel
+        </a>
+        <a href="/download"
+           class="nav-btn nav-btn--primary"
+           aria-label="Baixar o cliente do jogo">
+          Baixar
+        </a>
+      </div>
+
+      <button
+        class="site-nav__hamburger"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+        aria-label="Abrir menu de navegação"
+        type="button">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <nav id="mobileNav"
+         class="site-nav__mobile"
+         aria-label="Menu mobile"
+         aria-hidden="true">
+      <ul class="site-nav__mobile-links" role="list">
+        <li><a href="#sistemas" class="site-nav__mobile-link">Info &amp; Sistemas</a></li>
+        <li><a href="#rankings" class="site-nav__mobile-link">Rankings</a></li>
+        <li><a href="#drops"    class="site-nav__mobile-link">Drops</a></li>
+        <li><a href="#eventos"  class="site-nav__mobile-link">Eventos</a></li>
+        <li><a href="#historia" class="site-nav__mobile-link">História</a></li>
+      </ul>
+      <a href="/download" class="nav-btn--mobile-cta">⬇ Baixar Cliente</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" aria-label="Apresentação do servidor">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__badge" aria-label="Status: Servidor Online e Estável">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Servidor Online &amp; Estável
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-gold">AORUS TALE</span>
+          <span class="hero__title-white">O Universo Épico</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Servidor dedicado de Priston Tale. Eventos especiais, comunidade ativa
+          e uma experiência construída para grandes guerras.
+        </p>
+
+        <div class="hero__actions">
+          <a href="/download" class="btn btn--primary">
+            <span aria-hidden="true">⬇</span> Baixar Cliente
+          </a>
+          <a href="https://www.youtube.com/@AorusPristonTale"
+             class="btn btn--ghost"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Assistir vídeo: como começar no YouTube">
+            <span aria-hidden="true">▶</span> Como Começar
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">Rolar</div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STATS BAR
+    ═══════════════════════════════════════════ -->
+    <div class="stats-bar reveal" role="region" aria-label="Estatísticas do servidor">
+      <dl class="stats-bar__inner">
+        <div class="stats-bar__item">
+          <dt class="stats-bar__label">Servidor Online</dt>
+          <dd class="stats-bar__value">24/7</dd>
+        </div>
+        <div class="stats-bar__item">
+          <dt class="stats-bar__label">Jogadores Ativos</dt>
+          <dd class="stats-bar__value">+5K</dd>
+        </div>
+        <div class="stats-bar__item">
+          <dt class="stats-bar__label">Pay-to-Win</dt>
+          <dd class="stats-bar__value">0%</dd>
+        </div>
+        <div class="stats-bar__item">
+          <dt class="stats-bar__label">Avaliação Discord</dt>
+          <dd class="stats-bar__value">4★</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         INFO & SISTEMAS
+    ═══════════════════════════════════════════ -->
+    <section id="sistemas" class="section section--sistemas">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Mecânicas</p>
+          <h2 class="section__title">Info &amp; <span class="accent">Sistemas</span></h2>
+          <p class="section__desc">
+            Todos os sistemas, mecânicas e diferenciais que fazem do Aorus Tale uma experiência única.
+          </p>
+        </header>
+
+        <nav aria-label="Sistemas do jogo">
+          <ul class="sistemas-grid reveal" role="list">
+            <li>
+              <a href="/info-sistemas#progressao"
+                 class="sistema-card"
+                 aria-label="Saiba mais sobre Progressão e Itens">
+                <span class="sistema-card__icon" aria-hidden="true">🔥</span>
+                <h3 class="sistema-card__name">Progressão e Itens</h3>
+                <p class="sistema-card__desc">
+                  Sistema de evolução profundo com equipamentos únicos, aging avançado
+                  e mix exclusivo do servidor.
+                </p>
+                <span class="sistema-card__arrow" aria-hidden="true">Saiba mais →</span>
+              </a>
+            </li>
+            <li>
+              <a href="/info-sistemas#exclusivos"
+                 class="sistema-card"
+                 aria-label="Saiba mais sobre Sistemas Exclusivos">
+                <span class="sistema-card__icon" aria-hidden="true">💎</span>
+                <h3 class="sistema-card__name">Sistemas Exclusivos</h3>
+                <p class="sistema-card__desc">
+                  Mecânicas desenvolvidas pela equipe Aorus para uma experiência
+                  diferenciada e balanceada.
+                </p>
+                <span class="sistema-card__arrow" aria-hidden="true">Saiba mais →</span>
+              </a>
+            </li>
+            <li>
+              <a href="/info-sistemas#gameplay"
+                 class="sistema-card"
+                 aria-label="Saiba mais sobre Gameplay e Conteúdo">
+                <span class="sistema-card__icon" aria-hidden="true">⚔️</span>
+                <h3 class="sistema-card__name">Gameplay e Conteúdo</h3>
+                <p class="sistema-card__desc">
+                  Bosses, dungeons, GBR e conteúdo end-game desafiador para os
+                  guerreiros mais dedicados.
+                </p>
+                <span class="sistema-card__arrow" aria-hidden="true">Saiba mais →</span>
+              </a>
+            </li>
+            <li>
+              <a href="/info-sistemas#balance"
+                 class="sistema-card"
+                 aria-label="Saiba mais sobre Equilíbrio e Performance">
+                <span class="sistema-card__icon" aria-hidden="true">🛡️</span>
+                <h3 class="sistema-card__name">Equilíbrio e Performance</h3>
+                <p class="sistema-card__desc">
+                  Classes balanceadas, servidor de alta performance e latência
+                  mínima para jogadores BR.
+                </p>
+                <span class="sistema-card__arrow" aria-hidden="true">Saiba mais →</span>
+              </a>
+            </li>
+            <li>
+              <a href="/info-sistemas#extras"
+                 class="sistema-card"
+                 aria-label="Saiba mais sobre Funcionalidades Extras">
+                <span class="sistema-card__icon" aria-hidden="true">🕹️</span>
+                <h3 class="sistema-card__name">Funcionalidades Extras</h3>
+                <p class="sistema-card__desc">
+                  Analytics, XP Tracker e dashboards em tempo real para otimizar
+                  sua jornada.
+                </p>
+                <span class="sistema-card__arrow" aria-hidden="true">Saiba mais →</span>
+              </a>
+            </li>
+            <li>
+              <a href="/guia-do-jogo"
+                 class="sistema-card sistema-card--cta"
+                 aria-label="Acessar o guia completo do jogo">
+                <span class="sistema-card__icon" aria-hidden="true">📖</span>
+                <h3 class="sistema-card__name">Ver Guia Completo</h3>
+                <span class="sistema-card__arrow sistema-card__arrow--center" aria-hidden="true">
+                  Acessar →
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true" />
+
+    <!-- ═══════════════════════════════════════════
+         RANKINGS
+    ═══════════════════════════════════════════ -->
+    <section id="rankings" class="section section--rankings">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <p class="section__eyebrow">Hall da Fama</p>
+          <h2 class="section__title">Rankings &amp; <span class="accent">Lideranças</span></h2>
+        </header>
+
+        <div class="rankings-grid reveal">
+          <!-- Bless Castle -->
+          <article class="rank-card" aria-label="Bless Castle Master">
+            <header class="rank-card__header">
+              <h3 class="rank-card__title">Bless Castle Master</h3>
+              <span class="rank-tag" aria-label="Dados ao vivo">Ao Vivo</span>
+            </header>
+            <div class="rank-castle">
+              <span class="rank-castle__crown" aria-hidden="true">👑</span>
+              <p class="rank-castle__pos" aria-label="Posição 1">#1</p>
+              <p class="rank-castle__label">Clan Dominante</p>
+              <p class="rank-castle__name">— Aguardando —</p>
+              <p class="rank-castle__leader">Próxima guerra em breve</p>
+            </div>
+          </article>
+
+          <!-- Ranking Bellatra -->
+          <article class="rank-card" aria-label="Ranking Bellatra">
+            <header class="rank-card__header">
+              <h3 class="rank-card__title">Ranking Bellatra (SOD)</h3>
+            </header>
+
+            <div class="tabs" role="tablist" aria-label="Tipo de ranking">
+              <button class="tab tab--active"
+                      role="tab"
+                      id="tab-lvl"
+                      aria-selected="true"
+                      aria-controls="tabpanel-lvl"
+                      type="button">
+                Top Level
+              </button>
+              <button class="tab"
+                      role="tab"
+                      id="tab-pvp"
+                      aria-selected="false"
+                      aria-controls="tabpanel-pvp"
+                      type="button">
+                Top PvP
+              </button>
+              <button class="tab"
+                      role="tab"
+                      id="tab-sod"
+                      aria-selected="false"
+                      aria-controls="tabpanel-sod"
+                      type="button">
+                Top SOD
+              </button>
+            </div>
+
+            <div id="tabpanel-lvl" role="tabpanel" aria-labelledby="tab-lvl">
+              <table class="rank-table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Personagem</th>
+                    <th scope="col">Classe</th>
+                    <th scope="col">Nível</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-lvl">
+                  <tr><td colspan="4" class="rank-table__empty">Carregando ranking...</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="tabpanel-pvp" role="tabpanel" aria-labelledby="tab-pvp" hidden>
+              <table class="rank-table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Personagem</th>
+                    <th scope="col">BP</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-pvp">
+                  <tr><td colspan="3" class="rank-table__empty">Carregando ranking...</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="tabpanel-sod" role="tabpanel" aria-labelledby="tab-sod" hidden>
+              <table class="rank-table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Personagem</th>
+                    <th scope="col">Score</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody-sod">
+                  <tr><td colspan="3" class="rank-table__empty">Carregando ranking...</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true" />
+
+    <!-- ═══════════════════════════════════════════
+         HISTÓRICO DE DROPS
+    ═══════════════════════════════════════════ -->
+    <section id="drops" class="section section--drops">
+      <div class="container">
+        <header class="section__header section__header--row reveal">
+          <div>
+            <p class="section__eyebrow">Tempo Real</p>
+            <h2 class="section__title">Histórico de <span class="accent">Drops</span></h2>
+          </div>
+          <a href="/historicos"
+             class="btn btn--ghost btn--sm"
+             aria-label="Ver histórico completo de drops">
+            Ver completo →
+          </a>
+        </header>
+
+        <div class="drops-table-wrap reveal">
+          <table class="drops-table" aria-label="Drops recentes">
+            <thead>
+              <tr>
+                <th scope="col">Personagem</th>
+                <th scope="col">Classe</th>
+                <th scope="col">Item</th>
+                <th scope="col">Localização</th>
+                <th scope="col">
+                  <span class="live-dot" aria-hidden="true"></span>
+                  Horário
+                </th>
+              </tr>
+            </thead>
+            <tbody id="drops-tbody">
+              <tr>
+                <td colspan="5" class="drops-table__empty">
+                  ⚔ Sincronizando campos de batalha...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true" />
+
+    <!-- ═══════════════════════════════════════════
+         CALENDÁRIO DE EVENTOS
+    ═══════════════════════════════════════════ -->
+    <section id="eventos" class="section section--calendar">
+      <div class="container">
+        <header class="section__header section__header--center reveal">
+          <p class="section__eyebrow">Agenda</p>
+          <h2 class="section__title">Calendário de <span class="accent">Abril</span></h2>
+          <p class="section__desc">Fique por dentro de todos os eventos do mês.</p>
+        </header>
+
+        <div class="calendar reveal" role="region" aria-label="Calendário de abril de 2026">
+          <div class="calendar__grid">
+            <div class="calendar__header" aria-hidden="true">DOM</div>
+            <div class="calendar__header" aria-hidden="true">SEG</div>
+            <div class="calendar__header" aria-hidden="true">TER</div>
+            <div class="calendar__header" aria-hidden="true">QUA</div>
+            <div class="calendar__header" aria-hidden="true">QUI</div>
+            <div class="calendar__header" aria-hidden="true">SEX</div>
+            <div class="calendar__header" aria-hidden="true">SÁB</div>
+
+            <div class="calendar__day calendar__day--empty" aria-hidden="true"></div>
+            <div class="calendar__day calendar__day--empty" aria-hidden="true"></div>
+            <div class="calendar__day"><time datetime="2026-04-01" class="calendar__day-num">1</time></div>
+            <div class="calendar__day"><time datetime="2026-04-02" class="calendar__day-num">2</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-03" class="calendar__day-num">3</time>
+              <span class="calendar__event calendar__event--boss">Boss 20:00</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-04" class="calendar__day-num">4</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-05" class="calendar__day-num">5</time>
+              <span class="calendar__event calendar__event--pvp">GBR 21:00</span>
+            </div>
+
+            <div class="calendar__day"><time datetime="2026-04-06" class="calendar__day-num">6</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-07" class="calendar__day-num">7</time>
+              <span class="calendar__event calendar__event--exp">2x EXP</span>
+            </div>
+            <div class="calendar__day">
+              <time datetime="2026-04-08" class="calendar__day-num">8</time>
+              <span class="calendar__event calendar__event--exp">2x EXP</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-09" class="calendar__day-num">9</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-10" class="calendar__day-num">10</time>
+              <span class="calendar__event calendar__event--boss">Boss 20:00</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-11" class="calendar__day-num">11</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-12" class="calendar__day-num">12</time>
+              <span class="calendar__event calendar__event--pvp">GBR 21:00</span>
+            </div>
+
+            <div class="calendar__day"><time datetime="2026-04-13" class="calendar__day-num">13</time></div>
+            <div class="calendar__day calendar__day--today" aria-current="date">
+              <time datetime="2026-04-14" class="calendar__day-num">14</time>
+              <span class="calendar__event calendar__event--drop">Drop+</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-15" class="calendar__day-num">15</time></div>
+            <div class="calendar__day"><time datetime="2026-04-16" class="calendar__day-num">16</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-17" class="calendar__day-num">17</time>
+              <span class="calendar__event calendar__event--boss">Boss 20:00</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-18" class="calendar__day-num">18</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-19" class="calendar__day-num">19</time>
+              <span class="calendar__event calendar__event--pvp">GBR 21:00</span>
+            </div>
+
+            <div class="calendar__day"><time datetime="2026-04-20" class="calendar__day-num">20</time></div>
+            <div class="calendar__day"><time datetime="2026-04-21" class="calendar__day-num">21</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-22" class="calendar__day-num">22</time>
+              <span class="calendar__event calendar__event--exp">2x EXP</span>
+            </div>
+            <div class="calendar__day">
+              <time datetime="2026-04-23" class="calendar__day-num">23</time>
+              <span class="calendar__event calendar__event--exp">2x EXP</span>
+            </div>
+            <div class="calendar__day">
+              <time datetime="2026-04-24" class="calendar__day-num">24</time>
+              <span class="calendar__event calendar__event--boss">Boss 20:00</span>
+            </div>
+            <div class="calendar__day"><time datetime="2026-04-25" class="calendar__day-num">25</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-26" class="calendar__day-num">26</time>
+              <span class="calendar__event calendar__event--pvp">GBR 21:00</span>
+            </div>
+
+            <div class="calendar__day"><time datetime="2026-04-27" class="calendar__day-num">27</time></div>
+            <div class="calendar__day"><time datetime="2026-04-28" class="calendar__day-num">28</time></div>
+            <div class="calendar__day"><time datetime="2026-04-29" class="calendar__day-num">29</time></div>
+            <div class="calendar__day">
+              <time datetime="2026-04-30" class="calendar__day-num">30</time>
+              <span class="calendar__event calendar__event--drop">Drop+</span>
+            </div>
+            <div class="calendar__day calendar__day--empty" aria-hidden="true"></div>
+            <div class="calendar__day calendar__day--empty" aria-hidden="true"></div>
+            <div class="calendar__day calendar__day--empty" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <ul class="calendar__legend reveal" role="list" aria-label="Legenda do calendário">
+          <li><span class="calendar__event calendar__event--boss" aria-hidden="true">Boss</span> Boss Time</li>
+          <li><span class="calendar__event calendar__event--pvp"  aria-hidden="true">GBR</span>  Guild Battle</li>
+          <li><span class="calendar__event calendar__event--exp"  aria-hidden="true">2x EXP</span> Fim de Semana XP</li>
+          <li><span class="calendar__event calendar__event--drop" aria-hidden="true">Drop+</span> Drop Especial</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true" />
+
+    <!-- ═══════════════════════════════════════════
+         HISTÓRIA
+    ═══════════════════════════════════════════ -->
+    <section id="historia" class="section section--historia">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__eyebrow">Lore</p>
+          <h2 class="section__title">A <span class="accent">História</span> do Mundo</h2>
+          <p class="section__desc">
+            As crônicas de Aorus — a narrativa épica que define os campos de batalha de Priston.
+          </p>
+        </header>
+
+        <div class="historia-layout reveal">
+          <!-- Timeline / índice de capítulos -->
+          <nav class="historia-timeline" aria-label="Capítulos da história">
+            <button class="chapter-btn chapter-btn--active"
+                    data-chapter="0"
+                    aria-current="true"
+                    type="button">
+              <span class="chapter-btn__num" aria-hidden="true">01</span>
+              <span class="chapter-btn__body">
+                <span class="chapter-btn__title">I. O Início da Ruína e o Chamado</span>
+                <span class="chapter-btn__excerpt">
+                  As fendas rasgadas no céu já não eram meros sinais… eram portais.
+                </span>
+              </span>
+            </button>
+            <button class="chapter-btn"
+                    data-chapter="1"
+                    aria-current="false"
+                    type="button">
+              <span class="chapter-btn__num" aria-hidden="true">02</span>
+              <span class="chapter-btn__body">
+                <span class="chapter-btn__title">II. O Choque de Mundos e a Invasão</span>
+                <span class="chapter-btn__excerpt">
+                  O solo de Priston tremia, pressentindo algo impossível de conter.
+                </span>
+              </span>
+            </button>
+            <button class="chapter-btn"
+                    data-chapter="2"
+                    aria-current="false"
+                    type="button">
+              <span class="chapter-btn__num" aria-hidden="true">03</span>
+              <span class="chapter-btn__body">
+                <span class="chapter-btn__title">III. A Chama da Resistência</span>
+                <span class="chapter-btn__excerpt">
+                  Das terras arruinadas, brilhos surgiram como corações reacendendo.
+                </span>
+              </span>
+            </button>
+          </nav>
+
+          <!-- Conteúdo do capítulo -->
+          <div class="historia-content">
+            <article class="story-card" id="story-card" aria-live="polite" aria-atomic="true">
+              <p class="story-card__label" id="story-label">Capítulo I</p>
+              <h3 class="story-card__title" id="story-title">O Início da Ruína e o Chamado</h3>
+              <div class="story-card__body" id="story-body">
+                <p>As fendas rasgadas no céu já não eram meros sinais… eram portais. O mal já havia atravessado e agora caminhava livremente pelo universo de Priston.</p>
+                <p>Sheep-Ankh, a Grande Esfinge — esculpida pelo próprio Aorus, metade carne, metade pedra — vigia as ruínas do Deserto Esquecido, julgando alma por alma.</p>
+                <blockquote>"Levantem-se, protetores de Priston. A batalha final se aproxima."</blockquote>
+                <p>Dois portais se abrem diariamente — às 12:00 e às 20:00. É ali que os generais caem. Ou… os guerreiros caem.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" aria-hidden="true" />
+
+    <!-- ═══════════════════════════════════════════
+         CTA FINAL
+    ═══════════════════════════════════════════ -->
+    <section class="section section--cta" aria-labelledby="cta-title">
+      <div class="container container--narrow">
+        <p class="section__eyebrow section__eyebrow--center">Sua Aventura Começa</p>
+        <h2 class="section__title section__title--center reveal" id="cta-title">
+          Pronto para <span class="accent">Defender Priston?</span>
+        </h2>
+        <p class="section__desc section__desc--center reveal">
+          Junte-se a milhares de guerreiros e experimente o melhor servidor
+          de Priston Tale do Brasil.
+        </p>
+        <div class="cta-actions reveal">
+          <a href="/download" class="btn btn--primary btn--lg">
+            ⬇ Baixar Agora — Grátis
+          </a>
+          <a href="https://discord.com/invite/WMzCt5erVn"
+             class="btn btn--ghost btn--lg"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Entrar no servidor do Discord">
+            Entrar no Discord
+          </a>
+        </div>
+        <ul class="cta-notes reveal" role="list" aria-label="Diferenciais do servidor">
+          <li>Totalmente gratuito</li>
+          <li>Sem pay-to-win</li>
+          <li>Comunidade ativa</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="site-footer__logo">⚔ AORUS TALE</p>
+          <p class="site-footer__tagline">
+            O melhor servidor de Priston Tale do Brasil. Experiência épica,
+            comunidade ativa e conteúdo constante.
+          </p>
+          <ul class="site-footer__socials" role="list" aria-label="Redes sociais">
+            <li>
+              <a href="https://discord.com/invite/WMzCt5erVn"
+                 class="social-btn"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Discord — servidor Aorus Tale">💬</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/aorus_tale"
+                 class="social-btn"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Instagram — @aorus_tale">📷</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@AorusPristonTale"
+                 class="social-btn"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="YouTube — AorusPristonTale">▶</a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="site-footer__col" aria-label="Links do jogo">
+          <h4 class="site-footer__col-title">Jogo</h4>
+          <ul role="list">
+            <li><a href="/download">Download</a></li>
+            <li><a href="/noticias">Notícias</a></li>
+            <li><a href="/rankings">Rankings</a></li>
+            <li><a href="/guia-do-jogo">Guia do Jogo</a></li>
+            <li><a href="/info-sistemas">Info &amp; Sistemas</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Ferramentas">
+          <h4 class="site-footer__col-title">Ferramentas</h4>
+          <ul role="list">
+            <li><a href="https://aorus-drops-analytics.vercel.app/" target="_blank" rel="noopener noreferrer">Analytics</a></li>
+            <li><a href="https://aorus-xp-tracker.vercel.app/" target="_blank" rel="noopener noreferrer">XP Tracker</a></li>
+            <li><a href="/historicos">Histórico de Drops</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="Suporte">
+          <h4 class="site-footer__col-title">Suporte</h4>
+          <ul role="list">
+            <li><a href="https://discord.com/invite/WMzCt5erVn" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="https://user.aorustale.com/painel/register" target="_blank" rel="noopener noreferrer">Criar Conta</a></li>
+            <li><a href="https://user.aorustale.com/painel/login" target="_blank" rel="noopener noreferrer">Painel</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 Aorus Tale. Todos os direitos reservados.</p>
+        <span class="status-pill" role="status" aria-live="polite">
+          <span class="live-dot" aria-hidden="true"></span>
+          Online &amp; Estável
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
